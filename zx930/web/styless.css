@@ -1,0 +1,131 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffebcc; /* 淡黄色背景 */
+    color: #333;
+}
+
+header {
+    background-color: #ff6347; /* 鲜艳的红色背景 */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000; /* 文字阴影 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.festival {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease; /* 过渡效果 */
+}
+
+.festival:hover {
+    transform: translateY(-10px); /* 鼠标悬停效果 */
+}
+
+.festival-header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #ff8c00; /* 橙色背景 */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.festival-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    animation: fadeEffect 1s; /* 淡入效果 */
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.festival-carousel .active {
+    display: block;
+}
+
+.festival-description {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #ff6347; /* 与header背景色相同 */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    margin-top: 2rem;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
